@@ -12,7 +12,7 @@ const { Storage } = Plugins;
 })
 export class IntroPage implements OnInit {
 
-  @ViewChild(IonSlides) slides: IonSlides;
+  @ViewChild(IonSlides)slides: IonSlides;
 
   constructor(private router: Router) { }
 
@@ -25,7 +25,7 @@ export class IntroPage implements OnInit {
 
   async start() {
     await Storage.set({key: INTRO_KEY, value: 'true'});
-    this.router.navigateByUrl('/login', {replaceUrl: true});
+    this.router.navigateByUrl('/login', { replaceUrl: true });
   }
 
 }
